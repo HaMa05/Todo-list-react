@@ -1,4 +1,4 @@
-.MenuIcon {
+.TabMenu {
   display: flex;
   justify-content: center;
   position: relative;
@@ -12,11 +12,12 @@
   border: 1px #ddd solid;
 }
 
-.MenuIcon:hover {
+.TabMenu:hover {
   color: #8cdc52;
+  cursor: pointer;
 }
 
-.MenuIcon .Icon {
+.TabMenu .Icon {
   position: relative;
   margin: auto;
 }

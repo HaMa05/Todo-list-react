@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./MenuIcon.css";
+import "./TabMenu.css";
 
-class MenuIcon extends Component {
+class TabMenu extends Component {
   render() {
     return (
-      <div className="MenuIcon">
+      <div className="TabMenu">
         <div className="Icon">
           <div className="Icon-icon">
             <i className={this.props.icon}></i>
@@ -16,4 +16,4 @@ class MenuIcon extends Component {
   }
 }
 
-export default MenuIcon;
+export default TabMenu;
