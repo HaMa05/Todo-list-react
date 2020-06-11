@@ -1,0 +1,22 @@
+.MenuIcon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 300px;
+  /* margin-top: 300px; */
+  width: 150px;
+  height: 100px;
+  background-color: #eee;
+  color: #555;
+  position: relative;
+  border: 1px #ddd solid;
+}
+
+.MenuIcon:hover {
+  color: #8cdc52;
+}
+
+.MenuIcon .Icon {
+  position: relative;
+  margin: auto;
+}
