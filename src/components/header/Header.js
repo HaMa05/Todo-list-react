@@ -9,7 +9,7 @@ class Header extends Component {
         <header className="Header-2">
           <div className="Header-go-back">
             <a href="#">
-              <i class="fas fa-long-arrow-alt-left"></i>
+              <i className="fas fa-long-arrow-alt-left"></i>
               <span>Go Back</span>
             </a>
           </div>

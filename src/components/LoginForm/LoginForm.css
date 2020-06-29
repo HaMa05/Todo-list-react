@@ -1,5 +1,6 @@
 .LoginForm {
-  /* margin-top: 1000px; */
+    /* display: inline-block; */
+  padding-bottom: 100px;
   font-family: Roboto;
   font-style: normal;
   width: 300px;

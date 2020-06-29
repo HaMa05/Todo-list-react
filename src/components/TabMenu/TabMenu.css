@@ -1,23 +1,17 @@
-.TabMenu {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 300px;
-  /* margin-top: 300px; */
-  width: 150px;
-  height: 100px;
-  background-color: #eee;
-  color: #555;
-  position: relative;
-  border: 1px #ddd solid;
+.TabMenu .Icon{
+    margin-top: 100px;
+    width: 40%;
+    height: 100px;
+    background-color: #eee;
+    color: #555;
+    position: relative;
+    left: 30%;margin-top: auto 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.TabMenu:hover {
-  color: #8cdc52;
-  cursor: pointer;
-}
-
-.TabMenu .Icon {
-  position: relative;
-  margin: auto;
+.TabMenu .Icon .Icon-n:hover {
+    color: #8cdc52;
+    cursor: pointer;
 }
