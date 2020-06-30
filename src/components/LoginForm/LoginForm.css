@@ -1,65 +1,65 @@
 .LoginForm {
     /* display: inline-block; */
-  padding-bottom: 100px;
-  font-family: Roboto;
-  font-style: normal;
-  width: 300px;
-  text-align: left;
-  margin: auto;
-  position: relative;
-  top: 150px;
-  overflow: hidden;
+    padding-bottom: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    width: 300px;
+    text-align: left;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    overflow: hidden;
 }
 
 .LoginForm h1 {
-  font-size: 50px;
-  margin-bottom: 30px;
-  text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .LoginForm .form .LoginForm-form {
-  margin-bottom: 10px;
-  border: 1px #dddddd solid;
-  border-radius: 5px;
-  padding: 5px 10px;
+    margin-bottom: 10px;
+    border: 1px #dddddd solid;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
-.LoginForm .form .LoginForm-form input{
-  border: none;
-  outline: none;
+.LoginForm .form .LoginForm-form input {
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
-.LoginForm .form  .btn {
-  width: 100%;
-  background: none;
-  border: none;
-  background-color: #00BD56;
-  padding: 15px;
-  border-radius: 5px;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 30px;
+.LoginForm .form .btn {
+    width: 100%;
+    background: none;
+    border: none;
+    background-color: #00bd56;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .LoginForm .form .check-validation {
-  color: #555555;
-  position: absolute;
-  left: 25%;
+    color: #555555;
+    position: absolute;
+    left: 25%;
 }
 
-.LoginForm .form .check-validation label{
-  margin-left: 5px;
+.LoginForm .form .check-validation label {
+    margin-left: 5px;
 }
 
 .LoginForm .LoginForm-forgot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 25px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
-.LoginForm .LoginForm-forgot .up a{
-  color: #555555;
-  font-weight: 700;
+.LoginForm .LoginForm-forgot .up a {
+    color: #555555;
+    font-weight: 700;
 }
