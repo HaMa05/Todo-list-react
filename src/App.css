@@ -294,3 +294,22 @@
     color: #555;
     font-weight: 500;
 }
+
+/* Table */
+
+.App .Container-table {
+    width: 50%;
+    margin: 0 auto;
+}
+.App .Container-table table{
+    width: 100%;
+    text-align: center;
+}
+.App .Container-table table tr th, td{
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.is-even{
+    background-color: rgb(216, 216, 216);
+}

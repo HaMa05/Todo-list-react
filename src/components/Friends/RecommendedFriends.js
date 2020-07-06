@@ -42,8 +42,9 @@ class RecommendedFriends extends Component {
                     </div>
                     <div className="Recommend-friends-list">
                         {this.props.users.map((user, index) => {
+                            console.log(index);
                             return (
-                                <FollowFriendListItem user={user} key={index} />
+                                <FollowFriendListItem user={user} index={index}/>
                             );
                         })}
                     </div>

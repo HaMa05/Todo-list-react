@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import LoginForm from "./components/LoginForm/LoginForm";
 import TabMenu from "./components/TabMenu/TabMenu";
 import RecommendedFriends from "./components/Friends/RecommendedFriends";
+import Table from "./components/Table/Table";
 
 class App extends Component {
     constructor() {
@@ -48,6 +49,28 @@ class App extends Component {
                 name: "Hippo",
             },
         ];
+        this.infos = [
+            {
+                first: "Mark",
+                last: "Otto",
+                handle: "@mdo",
+            },
+            {
+                first: "Mark",
+                last: "Otto",
+                handle: "@mdo",
+            },
+            {
+                first: "Mark",
+                last: "Otto",
+                handle: "@mdo",
+            },
+            {
+                first: "Mark",
+                last: "Otto",
+                handle: "@mdo",
+            },
+        ]
     }
     render() {
         return (
@@ -56,6 +79,7 @@ class App extends Component {
                 <LoginForm email="abc@example.com" />
                 <TabMenu items={this.items} />
                 <RecommendedFriends users={this.users} />
+                <Table infos={this.infos}/>
             </div>
         );
     }

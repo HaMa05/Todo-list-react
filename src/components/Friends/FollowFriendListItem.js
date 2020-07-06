@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class FollowFriendListItem extends Component {
     render() {
         return (
-            <div className="Recommend-friends-item" key={this.props.key}>
+            <div className="Recommend-friends-item" key={this.props.index}>
                 <div className="info">
                     <img className="info-content" src={this.props.user.img} />
                     <div className="info-content">
