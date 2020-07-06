@@ -6,9 +6,17 @@ import TabMenu from "./components/TabMenu/TabMenu";
 import RecommendedFriends from "./components/Friends/RecommendedFriends";
 import Table from "./components/Table/Table";
 
+import TrafficLight from "./components/TrafficLight/TrafficLight";
+const RED = -1;
+const ORANGE = 0;
+const GREEN = 1;
+
 class App extends Component {
     constructor() {
         super();
+        this.state = {
+            isCurrentColor: RED,
+        };
         this.items = [
             {
                 icon: "fas fa-home fa-3x",
@@ -70,16 +78,36 @@ class App extends Component {
                 last: "Otto",
                 handle: "@mdo",
             },
-        ]
+        ];
+
+        setInterval(() => {
+            this.setState({
+                isCurrentColor: this.getNextColor(this.state.isCurrentColor),
+            });
+        }, 1000);
     }
+
+    getNextColor(color) {
+        switch (color) {
+            case RED:
+                return ORANGE;
+            case ORANGE:
+                return GREEN;
+            default:
+                return RED;
+        }
+    }
+
     render() {
+        const { isCurrentColor } = this.state;
         return (
             <div className="App">
                 <Header />
                 <LoginForm email="abc@example.com" />
                 <TabMenu items={this.items} />
                 <RecommendedFriends users={this.users} />
-                <Table infos={this.infos}/>
+                <Table infos={this.infos} />
+                {/* <TrafficLight isCurrentColor={isCurrentColor} /> */}
             </div>
         );
     }
