@@ -5,7 +5,7 @@ import LoginForm from "./components/LoginForm/LoginForm";
 import TabMenu from "./components/TabMenu/TabMenu";
 import RecommendedFriends from "./components/Friends/RecommendedFriends";
 import Table from "./components/Table/Table";
-
+import SearchBox from "./components/SearchBox/SearchBox";
 import TrafficLight from "./components/TrafficLight/TrafficLight";
 const RED = -1;
 const ORANGE = 0;
@@ -80,11 +80,11 @@ class App extends Component {
             },
         ];
 
-        setInterval(() => {
-            this.setState({
-                isCurrentColor: this.getNextColor(this.state.isCurrentColor),
-            });
-        }, 1000);
+        // setInterval(() => {
+        //     this.setState({
+        //         isCurrentColor: this.getNextColor(this.state.isCurrentColor),
+        //     });
+        // }, 1000);
     }
 
     getNextColor(color) {
@@ -102,12 +102,13 @@ class App extends Component {
         const { isCurrentColor } = this.state;
         return (
             <div className="App">
-                <Header />
+                {/* <Header />
                 <LoginForm email="abc@example.com" />
                 <TabMenu items={this.items} />
                 <RecommendedFriends users={this.users} />
-                <Table infos={this.infos} />
+                <Table infos={this.infos} /> */}
                 {/* <TrafficLight isCurrentColor={isCurrentColor} /> */}
+                <SearchBox />
             </div>
         );
     }
