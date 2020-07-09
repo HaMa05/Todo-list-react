@@ -1,0 +1,67 @@
+.Modal {
+    width: 80%;
+    height: 450px;
+    background-color: aliceblue;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.info {
+    margin: 0 40px;
+}
+
+h1 {
+    text-align: left;
+}
+.content {
+    text-align: left;
+}
+
+.btn {
+    display: flex;
+    position: absolute;
+    right: 40px;
+}
+
+.btn button {
+    color: #fff;
+    padding: 10px 30px;
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+.btn button:first-child, input {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: #28a745;
+    margin-right: 20px;
+}
+.btn button:nth-child(2) {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: #d63447;
+}
+
+.times {
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+}
+
+/* Open Modal */
+
+.open-modal {
+    margin-top: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: tomato;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}

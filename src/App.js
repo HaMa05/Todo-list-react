@@ -7,6 +7,8 @@ import RecommendedFriends from "./components/Friends/RecommendedFriends";
 import Table from "./components/Table/Table";
 import SearchBox from "./components/SearchBox/SearchBox";
 import TrafficLight from "./components/TrafficLight/TrafficLight";
+import Modal from "./components/Modal/Modal";
+import OpenModal from "./components/Modal/OpenModal";
 const RED = -1;
 const ORANGE = 0;
 const GREEN = 1;
@@ -108,7 +110,8 @@ class App extends Component {
                 <RecommendedFriends users={this.users} />
                 <Table infos={this.infos} /> */}
                 {/* <TrafficLight isCurrentColor={isCurrentColor} /> */}
-                <SearchBox />
+                {/* <SearchBox /> */}
+                <OpenModal/>
             </div>
         );
     }
