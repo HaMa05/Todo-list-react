@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types"
 
 class FollowFriendListItem extends Component {
     render() {
@@ -17,6 +18,14 @@ class FollowFriendListItem extends Component {
             </div>
         );
     }
+}
+
+FollowFriendListItem.PropTypes = {
+    index: PropTypes.number,
+    user: PropTypes.shape({
+        img: PropTypes.string,
+        name: PropTypes.string
+    })
 }
 
 export default FollowFriendListItem;
